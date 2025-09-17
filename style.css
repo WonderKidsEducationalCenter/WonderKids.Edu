@@ -1,103 +1,120 @@
-/* General Styles */
-body {
+/* ========== Reset & Base ========== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background: #f9f9f9;
   color: #333;
 }
 
-/* Header */
+/* ========== Theme Colors ========== */
+:root {
+  --primary-green: #145a32;   /* darker green */
+  --accent-yellow: #ffcc00;
+  --neutral-grey: #666;
+}
+
+/* ========== Header & Nav ========== */
 header {
-  background: #4CAF50;
-  color: white;
-  padding: 20px;
-  text-align: center;
+  background: var(--primary-green);
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-nav a:hover,
-nav a.active {
-  text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-  background: url('images/hero.jpg') no-repeat center center/cover;
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-}
-
-/* Sections */
-section {
-  padding: 40px 20px;
-}
-
-h3 {
-  margin-bottom: 15px;
-  color: #4CAF50;
-}
-
-/* Programs Cards */
-.programs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.program-card {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Footer */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
-/* Logo Styling */
-.logo {
-  height: 40px;
-  width: auto;
-  margin-right: 20px;
-  vertical-align: middle;
-}
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.logo {
+  max-height: 100px;
+  width: auto;
+}
+
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--accent-yellow);
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  background: var(--primary-green);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ========== Section Styling ========== */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--primary-green);
+  margin-bottom: 15px;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: var(--neutral-grey);
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--accent-yellow);
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: var(--primary-green);
+  color: #fff;
+}
+
+/* ========== Footer ========== */
+footer {
+  background: var(--primary-green);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
 }
