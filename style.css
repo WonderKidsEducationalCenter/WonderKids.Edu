@@ -86,7 +86,8 @@ footer {
 }
 /* Logo Styling */
 .logo {
-  height: 60px;
+  height: 40px;
+  width: auto;
   margin-right: 20px;
   vertical-align: middle;
 }
