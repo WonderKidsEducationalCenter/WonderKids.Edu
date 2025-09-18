@@ -41,13 +41,13 @@ nav {
 
 @media (max-width: 768px) {
   .logo {
-    max-height: 100px; /* smaller on tablets */
+    max-height: 100px;
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    max-height: 80px; /* smaller on phones */
+    max-height: 80px;
   }
 }
 
@@ -59,7 +59,6 @@ nav ul {
   padding: 0;
 }
 
-/* ========== Navigation Links (All Pages) ========== */
 nav ul li a {
   font-weight: bold;
   color: #fff; /* white links for visibility on all pages */
@@ -73,26 +72,26 @@ nav ul li a.active {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-/* ========== Home Page Content Centering ========== */
+/* ========== Home Page Content Centering ========= */
 .home-content {
-  max-width: 1200px; /* restrict width for readability */
-  margin: 0 auto;    /* center horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  text-align: center; /* center text inside container */
+  text-align: center;
 }
 
 .home-content p,
 .home-content h2,
 .home-content h3 {
-  margin: 0 auto 20px auto; /* spacing between elements */
-  display: inline-block;    /* shrink-wrap content if needed */
-  text-align: center;       /* ensure all text is centered */
+  margin: 0 auto 20px auto;
+  display: inline-block;
+  text-align: center;
 }
 
 /* ========== Hero Section ========== */
 .hero {
-  background: #f0f0f0; /* grey background */
-  color: #064420; /* dark green text */
+  background: #f0f0f0;
+  color: #064420;
   text-align: center;
   padding: 120px 20px;
   border-radius: 30px;
@@ -112,23 +111,23 @@ nav ul li a.active {
 
 .btn {
   display: inline-block;
-  background: #064420; /* dark green */
+  background: #064420;
   color: #fff;
   padding: 12px 25px;
-  border-radius: 50px; /* bubbly buttons */
+  border-radius: 50px;
   font-weight: bold;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: #ffcc00; /* yellow hover */
+  background: #ffcc00;
   color: #064420;
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-/* ========== Page Header Section ========== */
+/* ========== Page Header Section ========= */
 .page-header {
   text-align: center;
   padding: 60px 20px;
@@ -142,7 +141,57 @@ nav ul li a.active {
   margin-bottom: 10px;
 }
 
-/* ========== Programs List ========== */
+/* ========== About Page Section ========= */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ========== Admissions Page Section ========= */
+.admissions-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.admissions-hero img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.admissions-text {
+  flex: 1;
+  text-align: center;
+}
+
+/* ========== Programs Page Section ========= */
 .programs-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -151,7 +200,7 @@ nav ul li a.active {
 }
 
 .program {
-  background: #fff9e6; /* soft yellow */
+  background: #fff9e6;
   border: 2px solid #ffcc00;
   border-radius: 20px;
   padding: 25px;
@@ -165,11 +214,56 @@ nav ul li a.active {
   box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
-/* ========== Call to Action ========== */
+.program-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* ========== Contact Page Section ========= */
+.contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-image {
+  flex: 1;
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ========== Call to Action Section ========= */
 .cta {
   text-align: center;
   padding: 80px 20px;
-  background: #ffcc00; /* yellow */
+  background: #ffcc00;
   color: #064420;
   border-radius: 30px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
@@ -193,18 +287,18 @@ nav ul li a.active {
   transform: translateY(-3px);
 }
 
-/* ========== Footer ========== */
+/* ========== Footer Section ========= */
 footer {
   text-align: center;
   padding: 40px 20px;
-  background: #064420; /* dark green */
+  background: #064420;
   color: #fff;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
 }
 
-/* ========== Misc Fun / Bubbly Touches ========== */
+/* ========== Misc Fun / Bubbly Touches ========= */
 img {
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
